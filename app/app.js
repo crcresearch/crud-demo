@@ -15,4 +15,9 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+export default Ember.Component.extend({
+  tagName: ''
+});
+
 export default App;
+

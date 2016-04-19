@@ -1,3 +1,20 @@
-<h2 id="title">Welcome to Ember</h2>
+  {{#ui-sidebar class="inverted vertical menu"}}
+      <a class="active item">
+          Home
+      </a>
+      <a class="item">
+          Properties
+      </a>
+      <a class="item">
+          About
+      </a>
+  {{/ui-sidebar}}
 
-{{outlet}}
+    <div class="ui grid pusher">
+    </div>
+
+<div class="ui page basic segment">
+    <div class="ui blue large header">Ember Properties !</div>
+
+  {{outlet}}
+</div>

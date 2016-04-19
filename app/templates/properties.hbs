@@ -1,0 +1,33 @@
+<h2>List of Properties</h2>
+
+
+<table class="ui collapsing striped small fixed fluid table" style="width:100%;">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Priority</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Starting Bid</th>
+        <th>Current Bid</th>
+    </tr>
+    </thead>
+    <tbody>
+{{#each model as |property|}}
+    <tr>
+    {{#each property as |item|}}
+        <td>
+          {{item}}
+        </td>
+    {{/each}}
+    </tr>
+{{/each}}
+
+    </tbody>
+</table>
+
+{{outlet}}
+
+
